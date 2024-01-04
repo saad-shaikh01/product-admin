@@ -67,7 +67,7 @@ const SampleForm = () => {
 
   return (
     <div className="flex justify-center items-center my-auto">
-      <form className="bg-metal p-8 rounded shadow-md w-[50%]">
+      <form className="bg-metal p-8 rounded shadow-md w-[90%] sm:w-[50%] md:w-[60%] lg:w-[40%] ">
         <div className="mb-4">
           <label
             className="block text-gray-700 font-bold mb-2"

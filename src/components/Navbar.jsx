@@ -32,9 +32,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-metal text-white p-4 flex justify-between items-center">
+    <div className="bg-metal text-white p-4 flex justify-between items-center ">
       <div className="text-center flex-grow">
-        <h1 className="text-2xl font-bold">Welcome to Admin Panel</h1>
+        <h1 className="text-2xl font-bold hidden md:block ">Welcome to Admin Panel</h1>
       </div>
       <div className="text-right">
         {localStorage.getItem("token") ? (

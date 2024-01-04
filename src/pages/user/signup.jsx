@@ -67,7 +67,7 @@ const SignupForm = () => {
 
   return (
     <div className="flex  justify-center items-center my-auto">
-      <form className="box bg-metal p-8 rounded shadow-md w-[30%]">
+      <form className="box bg-metal p-8 rounded shadow-md w-[90%] sm:w-[50%] md:w-[40%] lg:w-[30%]">
         <h2 className="text-white text-2xl font-bold mb-4">Sign Up</h2>
         <div className="mb-4">
           <label

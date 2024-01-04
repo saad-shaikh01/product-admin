@@ -34,7 +34,7 @@ const SampleTable = () => {
           Oops, something went wrong...!
         </h1>
       ) : (
-        <div className="overflow-x-auto">
+        <div className="table-container overflow-x-auto  max-w-[100vw]">
           <table className="border-collapse w-full">
             <thead>
               <tr className="bg-metal">

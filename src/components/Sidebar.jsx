@@ -10,6 +10,10 @@ const Sidebar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeSidebar = () => {
+    setIsOpen(false);
+  };
+
   const toggleProductDropdown = () => {
     setProductDropdown(!productDropdown);
     setTestProductDropdown(false);
@@ -30,9 +34,16 @@ const Sidebar = () => {
 
   return (
     <>
-      <div
+      {/* <div
         className={`bg-metal box text-white w-64 h-screen ${
-          isOpen ? "block" : "block"
+          isOpen ? "hidden" : "block"
+        }`}
+      > */}
+      <div
+        className={`bg-metal text-white md:w-64 ${
+          isOpen
+            ? "block fixed inset-0 z-50"
+            : "hidden lg:block lg:static lg:w-64"
         }`}
       >
         <div className="p-4">
@@ -74,6 +85,7 @@ const Sidebar = () => {
                       <Link
                         to="/"
                         className="block py-1 hover:bg-gray-700 rounded"
+                        onClick={closeSidebar}
                       >
                         Table
                       </Link>
@@ -82,6 +94,7 @@ const Sidebar = () => {
                       <Link
                         to="/product-form"
                         className="block py-1 hover:bg-gray-700 rounded"
+                        onClick={closeSidebar}
                       >
                         Form
                       </Link>
@@ -119,6 +132,7 @@ const Sidebar = () => {
                       <Link
                         to="/test-product-table"
                         className="block py-1 hover:bg-gray-700 rounded"
+                        onClick={closeSidebar}
                       >
                         Table
                       </Link>
@@ -127,6 +141,7 @@ const Sidebar = () => {
                       <Link
                         to="/test-product-form"
                         className="block py-1 hover:bg-gray-700 rounded"
+                        onClick={closeSidebar}
                       >
                         Form
                       </Link>
@@ -164,6 +179,7 @@ const Sidebar = () => {
                       <Link
                         to="/cpr-product-table"
                         className="block py-1 hover:bg-gray-700 rounded"
+                        onClick={closeSidebar}
                       >
                         Table
                       </Link>
@@ -172,6 +188,7 @@ const Sidebar = () => {
                       <Link
                         to="/cpr-product-form"
                         className="block py-1 hover:bg-gray-700 rounded"
+                        onClick={closeSidebar}
                       >
                         Form
                       </Link>
@@ -183,13 +200,15 @@ const Sidebar = () => {
             {/* Add more sidebar links */}
           </ul>
         </div>
-        <button
-          className="absolute top-0 right-0 mt-4 mr-4 lg:hidden block"
-          onClick={toggleSidebar}
-        >
-          {isOpen ? "Close" : "Open"}
-        </button>
       </div>
+      <button
+        className={` absolute z-[999] top-0 ${
+          isOpen ? "right-0 px-2 rounded-full" : "py-1 px-2 rounded left-5"
+        }  mt-4 mr-4 md:hidden block `}
+        onClick={toggleSidebar}
+      >
+        {isOpen ? "X" : "Menu"}
+      </button>
     </>
   );
 };

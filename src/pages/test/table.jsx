@@ -28,35 +28,7 @@ const SampleTable = () => {
     }
   };
 
-  // Sample array of products
-  // const products = [
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
-  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
 
-  //     // Add more products as needed
-  // ];
 
   return (
     <>
@@ -65,8 +37,8 @@ const SampleTable = () => {
           Oops, something went wrong...!
         </h1>
       ) : (
-        <div className="overflow-x-auto">
-          <table className="border-collapse border-gray-300 border w-full">
+        <div className="table-container overflow-x-auto  max-w-[100vw]">
+          <table className="border-collapse border-gray-300 border w-full ">
             <thead>
               <tr className={`bg-metal`}>
                 <th className="border px-2 py-3 w-[5%]">Sr No</th>
@@ -133,3 +105,34 @@ const SampleTable = () => {
 };
 
 export default SampleTable;
+
+
+  // Sample array of products
+  // const products = [
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+  //     { TestId: '12438', id: 'ABC123', name: 'Sample Product 1', productType: "Prouct Type", testType: "Test Type", testProduct: "Test Product" },
+
+  //     // Add more products as needed
+  // ];

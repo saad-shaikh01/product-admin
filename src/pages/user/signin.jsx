@@ -112,7 +112,7 @@ const SigninForm = () => {
 
   return (
     <div className="flex justify-center items-center my-auto">
-      <form className="bg-metal p-8 rounded shadow-md w-[30%]">
+      <form className="bg-metal p-8 rounded shadow-md  w-[90%] sm:w-[50%] md:w-[40%] lg:w-[30%] ">
         <h2 className="text-white text-2xl font-bold mb-4">Sign In</h2>
         <div className="mb-4">
           <label className="block text-gray-700 font-bold mb-2" htmlFor="email">
