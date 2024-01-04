@@ -42,16 +42,16 @@ const Navbar = () => {
             onClick={handleSignout}
             className="cursor-pointer text-white hover:text-gray-300"
           >
-            Signout
+            Sign Out
           </div>
         ) : (
           <>
             <Link to="/signin" className="text-white hover:text-gray-300 mr-4">
-              Signin
+              Sign In
             </Link>
 
             <Link to="/signup" className="text-white hover:text-gray-300">
-              Signup
+              Sign Up
             </Link>
           </>
         )}
